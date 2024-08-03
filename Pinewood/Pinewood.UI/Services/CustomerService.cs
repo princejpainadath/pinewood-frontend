@@ -23,6 +23,10 @@ namespace Pinewood.UI.Services
             _httpClient.BaseAddress = new Uri(baseUrl);
         }
 
+        /// <summary>
+        /// Retrieves a list of customers.
+        /// </summary>
+        /// <returns>An enumerable collection of CustomerDto.</returns>
         public async Task<IEnumerable<CustomerDto>> GetCustomersAsync()
         {
             try
@@ -46,6 +50,11 @@ namespace Pinewood.UI.Services
             }
         }
 
+        /// <summary>
+        /// Retrieves a customer by their unique identifier.
+        /// </summary>
+        /// <param name="id">The unique identifier of the customer.</param>
+        /// <returns>A CustomerDto if found. Otherwise, null.</returns>
         public async Task<CustomerDto?> GetCustomerByIdAsync(Guid id)
         {
             try
@@ -69,6 +78,11 @@ namespace Pinewood.UI.Services
             }
         }
 
+        /// <summary>
+        /// Adds a new customer.
+        /// </summary>
+        /// <param name="customerDto">The details of the customer to add.</param>
+        /// <returns>The added CustomerDto if successful. Otherwise, null.</returns>
         public async Task<CustomerDto?> AddCustomerAsync(AddCustomerDto customerDto)
         {
             try
@@ -87,6 +101,11 @@ namespace Pinewood.UI.Services
             }
         }
 
+        /// <summary>
+        /// Updates an existing customer.
+        /// </summary>
+        /// <param name="customerDto">The updated details of the customer.</param>
+        /// <returns>The updated CustomerDto if successful. Otherwise, null.</returns>
         public async Task<CustomerDto?> UpdateCustomerAsync(UpdateCustomerDto customerDto)
         {
             try
@@ -105,6 +124,11 @@ namespace Pinewood.UI.Services
             }
         }
 
+        /// <summary>
+        /// Deletes a customer by their unique identifier.
+        /// </summary>
+        /// <param name="id">The unique identifier of the customer to delete.</param>
+        /// <returns>True if the deletion was successful. Otherwise, false.</returns>
         public async Task<bool> DeleteCustomerAsync(Guid id)
         {
             try
