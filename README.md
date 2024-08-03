@@ -14,4 +14,4 @@ It's a ASP.NET Core Web App that interacts with the Pinewood-Backend API to prov
 
 ### Hosting Details
 
-The project is deployed to Azure. Here is the url to access: `https://pinewood-frontend-dev.azurewebsites.net/`
+The project is deployed to Azure. Here is the url to access: [https://pinewood-frontend-dev.azurewebsites.net/](https://pinewood-frontend-dev.azurewebsites.net/)
